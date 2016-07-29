@@ -798,6 +798,7 @@
 - (void) setBristleDentity4ActiveBrush:(float)v
 {
     CZBrush *brush = CZActiveState::getInstance()->getActiveBrush();
+    if(brush->isInStampGeneratingMode() == false) return;
     CZBristleGenerator *gen = dynamic_cast<CZBristleGenerator *>(brush->getGenerator());
     if (!gen) return ;
     
@@ -819,6 +820,7 @@
 - (void) setBristleSize4ActiveBrush:(float)v
 {
     CZBrush *brush = CZActiveState::getInstance()->getActiveBrush();
+    if(brush->isInStampGeneratingMode() == false) return;
     CZBristleGenerator *gen = dynamic_cast<CZBristleGenerator *>(brush->getGenerator());
     if (!gen) return ;
     
