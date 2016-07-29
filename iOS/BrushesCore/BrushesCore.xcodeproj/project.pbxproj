@@ -75,6 +75,7 @@
 		2D7452F01D4A0C6100B28D8D /* CZFreehandTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D7452C61D4A0C6100B28D8D /* CZFreehandTool.cpp */; };
 		2D7452F11D4A0C6100B28D8D /* CZTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D7452C91D4A0C6100B28D8D /* CZTool.cpp */; };
 		2D7453081D4A0E9800B28D8D /* glsl in Resources */ = {isa = PBXBuildFile; fileRef = 2D7452F31D4A0DF200B28D8D /* glsl */; };
+		2D7453531D4B3FF600B28D8D /* stamp_images in Resources */ = {isa = PBXBuildFile; fileRef = 2D7453521D4B3FF600B28D8D /* stamp_images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,7 @@
 		2D7452F31D4A0DF200B28D8D /* glsl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glsl; path = ../../resource/glsl; sourceTree = "<group>"; };
 		2D7453021D4A0E4C00B28D8D /* BrushesCoreResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrushesCoreResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7453041D4A0E4C00B28D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7453521D4B3FF600B28D8D /* stamp_images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stamp_images; path = ../../resource/stamp_images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +527,7 @@
 		2D7452F21D4A0DD500B28D8D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D7453521D4B3FF600B28D8D /* stamp_images */,
 				2D7452F31D4A0DF200B28D8D /* glsl */,
 			);
 			name = Resources;
@@ -618,6 +621,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7453531D4B3FF600B28D8D /* stamp_images in Resources */,
 				2D7453081D4A0E9800B28D8D /* glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -927,6 +931,7 @@
 				2D74530C1D4A0FBB00B28D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

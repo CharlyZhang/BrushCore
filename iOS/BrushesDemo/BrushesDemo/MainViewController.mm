@@ -89,7 +89,7 @@
 
     [self.view insertSubview:canvasView atIndex:0];
     
-    UIImage *brushImage = [UIImage imageNamed:@"crayon.png"];
+    UIImage *brushImage = [UIImage imageNamed:@"BrushesCoreResources.bundle/stamp_images/watercolorPen.png"];
     [coreInstance setCurrentBrushStamp:brushImage];
     
     self.brushSize = 10.0f;
