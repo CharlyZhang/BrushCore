@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Si0-FH-ERo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="5em-mN-VVr">
+            <objects>
+                <viewController id="Si0-FH-ERo" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qZG-dc-Zw0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ns0-hQ-mMF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xk5-7c-UOw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-6X-tUQ">
+                                <rect key="frame" x="133" y="700" width="217" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="Y7c-dI-38G"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DWK-Rt-fjZ">
+                                <rect key="frame" x="786" y="738" width="220" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="o37-8H-8Cs"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="keE-Ip-N4g">
+                                <rect key="frame" x="133" y="738" width="217" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="y7p-cF-eLC"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="C8C-mV-3aD">
+                                <rect key="frame" x="474" y="700" width="186" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="kLl-Dq-YV9"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-RJ-dBA">
+                                <rect key="frame" x="786" y="662" width="220" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="Waq-Ld-huk"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Zr8-ni-wW3">
+                                <rect key="frame" x="133" y="624" width="217" height="31"/>
+                                <connections>
+                                    <action selector="sizeSlider:" destination="Si0-FH-ERo" eventType="valueChanged" id="u8y-K6-Vtx"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="大小:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-EQ-Jbm">
+                                <rect key="frame" x="20" y="624" width="107" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-gJ-fUq">
+                                <rect key="frame" x="786" y="624" width="220" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="rA2-1P-PP9"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-Oj-2XU">
+                                <rect key="frame" x="474" y="624" width="186" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="pTf-gr-A1f"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9qa-lO-F3a">
+                                <rect key="frame" x="474" y="662" width="186" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="EDF-Wu-ylg"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grM-CU-Wgv">
+                                <rect key="frame" x="903" y="700" width="101" height="30"/>
+                                <color key="backgroundColor" red="0.206587823" green="0.62610438479999997" blue="0.50755702989999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButton:" destination="Si0-FH-ERo" eventType="touchUpInside" id="5vq-es-Hl2"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SzF-sB-t9b">
+                                <rect key="frame" x="133" y="662" width="217" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="dRi-Dg-1Xd"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2A-d2-MFs">
+                                <rect key="frame" x="681" y="700" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.20658782298145104" green="0.6261043848167539" blue="0.50755702990087348" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="undo">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoButtonAction:" destination="Si0-FH-ERo" eventType="touchUpInside" id="QVv-Uf-bOt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-A7-B8q">
+                                <rect key="frame" x="794" y="700" width="101" height="30"/>
+                                <color key="backgroundColor" red="0.206587823" green="0.62610438479999997" blue="0.50755702989999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="redo">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="redoButtonAction:" destination="Si0-FH-ERo" eventType="touchUpInside" id="5FH-k3-EKS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="spacing:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-1g-Lcr">
+                                <rect key="frame" x="666" y="738" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="angle:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-0u-8yz">
+                                <rect key="frame" x="356" y="738" width="112" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="intentity:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPp-SP-rCU">
+                                <rect key="frame" x="20" y="738" width="107" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jitter:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osy-Qk-qRb">
+                                <rect key="frame" x="20" y="700" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="scatter:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vn0-aE-H3l">
+                                <rect key="frame" x="356" y="700" width="112" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bDensity:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F84-Fy-mR7">
+                                <rect key="frame" x="356" y="624" width="112" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bSize:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipU-wt-d6f">
+                                <rect key="frame" x="666" y="624" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dangle:0.0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sab-MC-mY6">
+                                <rect key="frame" x="20" y="662" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dweight:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NA-Sb-r1x">
+                                <rect key="frame" x="356" y="662" width="112" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dintentity:0.00" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIZ-51-Ece">
+                                <rect key="frame" x="666" y="662" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-Tb-rCg">
+                                <rect key="frame" x="474" y="738" width="186" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="AQ2-os-mfe"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d63-xi-dR8">
+                                <rect key="frame" x="4" y="0.0" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="Si0-FH-ERo" eventType="touchUpInside" id="qJq-gf-XJ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="DangleSlider" destination="SzF-sB-t9b" id="xa1-5T-umK"/>
+                        <outlet property="DangleTF" destination="sab-MC-mY6" id="02s-oM-A0C"/>
+                        <outlet property="DintentitySlider" destination="JbF-RJ-dBA" id="A0Z-js-fXM"/>
+                        <outlet property="DintentityTF" destination="kIZ-51-Ece" id="512-cW-OTd"/>
+                        <outlet property="DweightSlider" destination="9qa-lO-F3a" id="9GL-26-Bqk"/>
+                        <outlet property="DweightTF" destination="7NA-Sb-r1x" id="Yfx-Bl-qq3"/>
+                        <outlet property="angleSlider" destination="PHI-Tb-rCg" id="wIM-I3-s69"/>
+                        <outlet property="angleTF" destination="Ou6-0u-8yz" id="VHK-26-eNl"/>
+                        <outlet property="bDensitySlider" destination="Jeh-Oj-2XU" id="lXS-bi-D2e"/>
+                        <outlet property="bDensityTF" destination="F84-Fy-mR7" id="VJ5-IV-q2z"/>
+                        <outlet property="bSizeSlider" destination="sTg-gJ-fUq" id="mCo-yK-och"/>
+                        <outlet property="bSizeTF" destination="ipU-wt-d6f" id="P26-57-NSi"/>
+                        <outlet property="brushSizeSlider" destination="Zr8-ni-wW3" id="SVj-3N-NbJ"/>
+                        <outlet property="intentitySlider" destination="keE-Ip-N4g" id="XVU-tg-mqy"/>
+                        <outlet property="itentityTF" destination="NPp-SP-rCU" id="Amj-Ht-BSF"/>
+                        <outlet property="jitterSlider" destination="DxC-6X-tUQ" id="aoW-gZ-L2g"/>
+                        <outlet property="jitterTF" destination="osy-Qk-qRb" id="tug-Qm-QaE"/>
+                        <outlet property="redoButton" destination="8dt-A7-B8q" id="uhN-5k-LTF"/>
+                        <outlet property="scatterSlider" destination="C8C-mV-3aD" id="o9F-BG-YM3"/>
+                        <outlet property="scatterTF" destination="Vn0-aE-H3l" id="4UO-5I-F0B"/>
+                        <outlet property="spacingSlider" destination="DWK-Rt-fjZ" id="BR5-vB-ybt"/>
+                        <outlet property="spacingTF" destination="cE2-1g-Lcr" id="YNB-ZP-aYj"/>
+                        <outlet property="undoButton" destination="u2A-d2-MFs" id="MQs-Q0-avw"/>
+                        <outlet property="weightTF" destination="tbc-EQ-Jbm" id="685-po-OCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PH-Oh-sVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="1056"/>
+        </scene>
+    </scenes>
+</document>
