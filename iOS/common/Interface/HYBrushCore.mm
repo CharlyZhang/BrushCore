@@ -597,7 +597,7 @@
 #pragma mark -
 - (void)setActiveBrushwatercolorPenStamp
 {
-    UIImage *image = [UIImage imageNamed:@"watercolorPen.png"];
+    UIImage *image = [UIImage imageNamed:@"BrushesCoreResources.bundle/stamp_images/watercolorPen.png"];
     CZImage *stampImage = [self producedFromImage:image];
     
     CZActiveState *activeState = CZActiveState::getInstance();

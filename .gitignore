@@ -59,3 +59,4 @@ fastlane/screenshots
 
 iOSInjectionProject/
 iOS/lib
+xcshareddata
