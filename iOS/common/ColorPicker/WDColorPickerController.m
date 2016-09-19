@@ -54,6 +54,8 @@
 {
     UIColor *color = [[HYBrushCore sharedInstance]getColorFromActiveStateSwatchAtIndex:index];
     CGFloat r,g,b,a;
+    if(!color) return nil;
+    
     [color getRed:&r green:&g blue:&b alpha:&a];
     return [WDColor colorWithRed:r green:g blue:b alpha:a];
 }
